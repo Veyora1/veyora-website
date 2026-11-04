@@ -9,6 +9,13 @@ Status: INTERNAL DRAFT — not published; no payment acceptance authorized.
 - These are **not subscriptions**. Do not advertise automatic monthly renewal until Shopify recurring billing is configured and terms are approved.
 - Keep all products in DRAFT until explicit owner approval.
 
+## Dual purchase options
+- The package builder previews **one-time** and **monthly subscription** choices at the same price; neither currently checks out.
+- Shopify documents a free first-party Shopify Subscriptions app. Installation requires merchant approval; confirm any charges shown before proceeding.
+- When configured, attach a monthly selling plan to the same product while retaining the one-time option. Do not create a second chargeable product unnecessarily.
+- Confirm compatible payment gateway, customer self-service cancellation, subscription policy, notification emails and test orders before launch.
+- Never embed an Admin API token in the public website. Link to verified Shopify product pages only after publication is explicitly approved.
+
 ## Before checkout goes live
 - [ ] Confirm the Shopify store identity, legal business details and payment provider onboarding.
 - [ ] Confirm whether Shopify Basic billing or any other subscription charges are already active. Do not activate any new paid apps.
