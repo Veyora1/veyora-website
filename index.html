@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Veyora helps home-service businesses show up professionally online.">
+<title>Veyora | Local Growth Co.</title>
+<style>
+:root{--navy:#142a35;--teal:#168c88;--mint:#e8f8f3;--gold:#f5c96c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--navy);background:#fff}
+header{padding:19px 7%;display:flex;justify-content:space-between;align-items:center;background:white;position:sticky;top:0;z-index:5;box-shadow:0 2px 16px #142a3510}
+.logo{font-size:25px;font-weight:900;letter-spacing:2px}
+.logo span{color:var(--teal)}
+nav a{margin-left:20px;color:var(--navy);text-decoration:none;font-size:14px;font-weight:bold}
+.hero{background:linear-gradient(125deg,#e5faf3,#fff8e8);padding:100px 7%;text-align:center}
+.eyebrow{color:#167d79;font-size:13px;font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.08;max-width:850px;margin:18px auto}
+h1 em{font-style:normal;color:var(--teal)}
+.hero p{font-size:19px;line-height:1.7;max-width:650px;margin:20px auto 30px}
+.btn{display:inline-block;padding:15px 24px;border-radius:40px;background:var(--teal);color:white;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+.btn:hover{background:#116f6b}
+.btn.secondary{background:white;color:var(--navy);border:1px solid #c6dcd8;margin-left:8px}
+section{padding:75px 7%}
+.section-title{text-align:center;font-size:36px;margin:0 0 14px}
+.sub{text-align:center;color:#536c73;max-width:650px;margin:0 auto 35px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:1150px;margin:auto}
+.card{background:white;padding:28px;border:1px solid #e1eeeb;border-radius:20px;box-shadow:0 10px 35px #142a350a}
+.card h3{margin-top:8px}
+.card p{line-height:1.65;color:#536c73}
+.tag{color:#168c88;font-size:12px;font-weight:bold;letter-spacing:1px}
+#services{background:#f7fcfa}
+#pricing{background:#f2faf7}
+.price{font-size:38px;font-weight:900;margin:15px 0}
+.price small{font-size:14px;color:#61787c;font-weight:normal}
+.card ul{padding-left:20px;line-height:2;color:#536c73}
+#contact{text-align:center;background:var(--navy);color:white}
+#contact p{color:#d4e8e6}
+footer{text-align:center;padding:24px;background:#10232c;color:#c5d6d6;font-size:13px}
+#chat-toggle{position:fixed;bottom:20px;right:20px;z-index:10;border:0;border-radius:40px;background:var(--teal);color:white;padding:16px 21px;font-weight:bold;cursor:pointer;box-shadow:0 8px 25px #142a3540}
+#chat{display:none;position:fixed;right:20px;bottom:83px;width:min(370px,calc(100vw - 40px));height:min(500px,calc(100dvh - 110px));background:white;z-index:11;border-radius:20px;box-shadow:0 15px 55px #142a3540;overflow:hidden;flex-direction:column}
+#chat.open{display:flex}
+.chat-head{padding:18px;background:var(--navy);color:white;font-weight:bold;display:flex;justify-content:space-between}
+.chat-head button{background:none;border:0;color:white;font-size:20px;cursor:pointer}
+#messages{flex:1;overflow:auto;padding:16px;background:#f7fbfa}
+.msg{padding:12px;border-radius:13px;margin-bottom:10px;line-height:1.5;font-size:14px;background:white;border:1px solid #e2eeeb}
+.msg.user{background:var(--teal);color:white;margin-left:35px}
+#choices{padding:12px;display:flex;flex-wrap:wrap;gap:7px}
+#choices button{border:1px solid #add8d0;background:var(--mint);color:#145d5b;border-radius:20px;padding:9px;cursor:pointer}
+.chat-input{display:flex;padding:10px;border-top:1px solid #eee;gap:6px}
+.chat-input input{flex:1;min-width:0;padding:10px;border:1px solid #ccdcd8;border-radius:9px}
+.chat-input button{border:0;border-radius:9px;background:var(--teal);color:white;padding:10px;cursor:pointer}
+.chat-note{padding:0 12px 10px;font-size:10px;color:#61787c}
+@media(max-width:760px){.grid{grid-template-columns:1fr}header{flex-wrap:wrap;gap:12px}nav a{margin-left:9px;font-size:12px}.hero{padding:70px 6%}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">V<span>✦</span>EYORA</div>
+<nav><a href="#services">Services</a><a href="#work">Our Work</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+<div class="eyebrow">VEYORA LOCAL GROWTH CO.</div>
+<h1>Make your business <em>impossible to overlook.</em></h1>
+<p>Beautiful content. A stronger online presence. More time to focus on the work you do best. Marketing support designed for home-service businesses.</p>
+<a class="btn" href="#pricing">Explore Our Packages</a>
+<a class="btn secondary" href="#contact">Let's Talk</a>
+</div>
+
+<section id="services">
+<h2 class="section-title">Marketing made simpler.</h2>
+<p class="sub">We help home-service owners show up consistently and professionally online.</p>
+<div class="grid">
+<div class="card"><div class="tag">01 / SOCIAL</div><h3>Branded Social Content</h3><p>Professional graphics and captions that reflect your business.</p></div>
+<div class="card"><div class="tag">02 / LOCAL</div><h3>Google Business Content</h3><p>Post drafts to help keep your Google Business Profile active.</p></div>
+<div class="card"><div class="tag">03 / VIDEO</div><h3>Short-Form Video Editing</h3><p>Turn footage you provide into polished short videos.</p></div>
+</div>
+</section>
+
+<section id="work">
+<h2 class="section-title">Made for businesses like yours.</h2>
+<p class="sub">Explore the types of home-service industries we create marketing concepts for. These are demonstration concepts, not actual client campaigns.</p>
+<div class="grid">
+<div class="card"><div class="tag">PEST CONTROL</div><h3>Don't Wait Until Pests Move In.</h3><p>Seasonal prevention messaging that helps homeowners take the next step.</p></div>
+<div class="card"><div class="tag">HVAC</div><h3>Comfort Starts Before the Temperature Changes.</h3><p>Helpful maintenance reminders for homeowners.</p></div>
+<div class="card"><div class="tag">PLUMBING</div><h3>Small Leaks Can Become Big Problems.</h3><p>Simple educational content about everyday plumbing concerns.</p></div>
+<div class="card"><div class="tag">ROOFING</div><h3>Protect What Matters Most.</h3><p>Home protection and inspection campaign concepts.</p></div>
+<div class="card"><div class="tag">LANDSCAPING</div><h3>Make Your Outdoor Space Stand Out.</h3><p>Visual, seasonal content ideas for outdoor service providers.</p></div>
+<div class="card"><div class="tag">CLEANING</div><h3>A Cleaner Space. A Better Feeling.</h3><p>Professional, welcoming content for cleaning businesses.</p></div>
+</div>
+</section>
+
+<section id="pricing">
+<h2 class="section-title">Find your fit.</h2>
+<p class="sub">Straightforward introductory monthly packages. Final scope is confirmed before any agreement.</p>
+<div class="grid">
+<div class="card"><div class="tag">START HERE</div><h3>Visibility</h3><div class="price">$249 <small>/month</small></div><ul><li>8 social posts</li><li>4 Google post drafts</li><li>Monthly content calendar</li><li>1 revision round</li></ul><a class="btn" href="#contact">Ask About Visibility</a></div>
+<div class="card" style="border:2px solid #168c88"><div class="tag">GROW YOUR PRESENCE</div><h3>Growth</h3><div class="price">$449 <small>/month</small></div><ul><li>12 social posts</li><li>4 Google post drafts</li><li>2 short-form video edits</li><li>Monthly report</li><li>2 revision rounds</li></ul><a class="btn" href="#contact">Ask About Growth</a></div>
+<div class="card"><div class="tag">MORE CONTENT</div><h3>Authority</h3><div class="price">$699 <small>/month</small></div><ul><li>16 social posts</li><li>4 Google post drafts</li><li>4 short-form video edits</li><li>Monthly report</li><li>Strategy meeting</li><li>2 revision rounds</li></ul><a class="btn" href="#contact">Ask About Authority</a></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Ready to stand out?</h2>
+<p>Tell us about your business and let's explore what makes sense for you.</p>
+<a class="btn" href="mailto:hello.veyora1@gmail.com?subject=Veyora%20Business%20Inquiry">Email Veyora</a>
+<p>hello.veyora1@gmail.com</p>
+</section>
+<footer>© 2026 Veyora Local Growth Co. · Wisconsin-based · Serving US home-service businesses</footer>
+
+<button id="chat-toggle" aria-controls="chat" aria-expanded="false">✦ Need help choosing?</button>
+<div id="chat" aria-label="Veyora guided assistant">
+<div class="chat-head">Veyora Website Guide <button id="close" aria-label="Close chat">×</button></div>
+<div id="messages" role="log" aria-live="polite"></div>
+<div id="choices"></div>
+<form id="chat-form" class="chat-input">
+<input id="chat-input" maxlength="300" placeholder="Ask about our services..." aria-label="Your question" required>
+<button type="submit">Send</button>
+</form>
+<div class="chat-note">Automated guided assistant, not generative AI. Messages remain in your browser unless you choose to email us.</div>
+</div>
+
+<script>
+const chat=document.getElementById('chat');
+const toggle=document.getElementById('chat-toggle');
+const log=document.getElementById('messages');
+const choices=document.getElementById('choices');
+const input=document.getElementById('chat-input');
+let stage=0,info={industry:'',goal:'',budget:''};
+function msg(text,user=false){
+const el=document.createElement('div');
+el.className='msg'+(user?' user':'');
+el.textContent=text;
+log.appendChild(el);log.scrollTop=log.scrollHeight;
+}
+function buttons(arr){
+choices.replaceChildren();
+arr.forEach(label=>{
+const b=document.createElement('button');
+b.textContent=label;
+b.onclick=()=>answer(label);
+choices.appendChild(b);
+});
+}
+function recommend(){
+const budget=info.budget.toLowerCase();
+let plan='Growth ($449/month)';
+if(/under|249|250|300/.test(budget))plan='Visibility ($249/month)';
+if(/600|700|higher|maximum/.test(budget))plan='Authority ($699/month)';
+info.plan=plan;
+msg('Based on what you shared, I suggest starting with '+plan+'. This is a preliminary recommendation; we can tailor the scope to your needs.');
+buttons(['Prepare my inquiry','Start over']);
+}
+function answer(value){
+msg(value,true);
+if(value==='Start over'){stage=0;info={};msg('What type of business do you operate?');buttons(['Pest control','HVAC','Plumbing','Roofing','Landscaping','Cleaning','Other']);return;}
+if(value==='Prepare my inquiry'){
+const body='Hello Veyora,\\n\\nMy industry: '+info.industry+'\\nMy goal: '+info.goal+'\\nMonthly budget: '+info.budget+'\\nSuggested package: '+info.plan+'\\n\\nPlease contact me to discuss next steps.';
+const a=document.createElement('a');
+a.href='mailto:hello.veyora1@gmail.com?subject='+encodeURIComponent('Veyora Service Inquiry')+'&body='+encodeURIComponent(body);
+a.textContent='Open email draft to review and send';
+a.style.cssText='display:block;padding:12px;color:#167d79;font-weight:bold';
+log.appendChild(a);
+msg('Your inquiry is ready. Click the email link above to review it and send it yourself.');
+buttons(['Start over']);return;
+}
+if(stage===0){info.industry=value;stage=1;msg('What is your biggest marketing goal?');buttons(['More consistent social posts','Improve local visibility','Create short videos','Not sure yet']);return;}
+if(stage===1){info.goal=value;stage=2;msg('What monthly marketing budget are you considering?');buttons(['Under $300','$300–$599','$600 or higher','Not sure yet']);return;}
+if(stage===2){info.budget=value;stage=3;recommend();return;}
+const q=value.toLowerCase();
+if(/price|cost|package/.test(q)){msg('We offer Visibility at $249, Growth at $449, and Authority at $699 per month.');buttons(['Start over','Prepare my inquiry']);}
+else if(/contact|email/.test(q)){msg('You can email hello.veyora1@gmail.com or complete the guided questions.');buttons(['Start over']);}
+else{msg('I can help you find a marketing package. Let’s start with your industry.');stage=0;buttons(['Pest control','HVAC','Plumbing','Roofing','Landscaping','Cleaning','Other']);}
+}
+toggle.onclick=()=>{
+const open=chat.classList.toggle('open');
+toggle.setAttribute('aria-expanded',String(open));
+if(open&&!log.children.length){msg('Hi! Welcome to Veyora. I can help you find the right marketing package. What type of business do you operate?');buttons(['Pest control','HVAC','Plumbing','Roofing','Landscaping','Cleaning','Other']);}
+};
+document.getElementById('close').onclick=()=>{chat.classList.remove('open');toggle.setAttribute('aria-expanded','false');};
+document.getElementById('chat-form').onsubmit=e=>{
+e.preventDefault();const value=input.value.trim();if(value){input.value='';answer(value);}
+};
+</script>
+</body>
+</html>
