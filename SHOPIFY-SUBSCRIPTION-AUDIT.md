@@ -26,3 +26,7 @@ Earlier attempt to create a selling plan through the connected API failed due to
 
 ## Current disposition
 No selling plans or checkout links were created by this audit. No new charges authorized. Do not label a discounted three-month purchase option as enforceable until verified.
+
+
+## Additional technical finding (2026-11-06)
+Shopify's subscription platform supports pricing policies that can change after a specified number of billing cycles, **but documentation states the subscription contract's line-item price does not update automatically**; the subscription app must apply the change. See https://shopify.dev/docs/apps/build/purchase-options/subscriptions/contracts . Platform capability does not establish support in the installed Shopify Subscriptions app or current connector permissions. Do not promise a month-four price change until the installed app's behavior has been verified.
